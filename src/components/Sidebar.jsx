@@ -33,9 +33,13 @@ const Sidebar = () => {
   return (
     <>
       <div className="  flex  absolute sm:top-0 bottom-0 sm:left-0  flex-col  w-screen sm:w-[200px] h-12 sm:h-screen z-[90] sm:py-10 sm:px-4 bg-[#000000] ">
-        <div className=" hidden sm:flex absolute top-0 bottom-0 left-0  w-full h-screen -z-[100]  bg-gradient-to-l from-[#032001]"></div>
+        <div className=" flex absolute sm:top-0 bottom-0 sm:left-0  w-full  sm:w-[200px] h-12 sm:h-screen -z-[100]  sm:bg-gradient-to-l bg-gradient-to-b from-[#042702] sm:from-[#032001]"></div>
         <NavLink to="/">
-          <img src={logo} alt="logo" className="w-full h-14 object-contain hidden sm:flex" />{" "}
+          <img
+            src={logo}
+            alt="logo"
+            className="w-full h-14 object-contain hidden sm:flex"
+          />{" "}
         </NavLink>
         <NavLinks />
       </div>
