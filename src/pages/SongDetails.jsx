@@ -28,7 +28,7 @@ const SongDetails = () => {
   if (isFetchingSongDetails) return <Loader title="Searching song details" />;
   if (isFetchinRelatedSongs) return <Loader title="Searching song details" />;
   return (
-    <div className="flex flex-col overflow-auto w-screen mt-4 ml-2">
+    <div className="flex flex-col pb-20 overflow-auto w-screen mt-4 ml-2">
       <div className="sm:w-[68%] lg:w-[60%] xl:w-[50%] 2xl:w-[40%]  sm:self-end self-center lg:self-center">
         <DetailsHeader data={songData} />
         <div className="mb-10 ml-2">

@@ -19,13 +19,13 @@ const Row = ({ i, genre, name }) => {
     slider.scrollLeft = slider.scrollLeft + 500;
   };
   if (isFetching) return <Loader title="Loading songs..." />;
-  if (error) return <Error />;
+  
 
   return (
     <div className="relative  flex flex-col  ">
       <div className=" flex justify-between items-center">
         <h2 className="text-white font-bold md:text-xl p-4">{name}</h2>
-        <div className="mr-2 -mb-6 ">
+        <div className="mr-2 -mb-6 hidden sm:flex">
           <button onClick={slideLeft} className="mr-3 cursor-pointer z-10 ">
             <img className="w-4 h-auto" src={left} />
           </button>

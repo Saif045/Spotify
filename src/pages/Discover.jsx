@@ -12,7 +12,7 @@ const Discover = () => {
 
   return (
     <>
-      <div className="   sm:ml-[200px] w-screen h-screen overflow-auto flex flex-col ">
+      <div className="  pb-20 mt-6 sm:ml-[200px] w-screen h-screen overflow-auto flex flex-col ">
        
 
         {rowData.map((genre, i) => (

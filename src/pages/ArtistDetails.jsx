@@ -33,7 +33,7 @@ const ArtistDetails = () => {
   if (isFetchingSongDetails)
     return <Loader title="Loading artist details..." />;
   return (
-    <div className="flex flex-col  sm:ml-[200px] h-screen w-screen overflow-auto">
+    <div className="flex flex-col pb-20 sm:ml-[200px] h-screen w-screen overflow-auto">
       <div className="flex flex-wrap w-full self-center 2xl:justify-start justify-center gap-1 my-10">
         {artistData?.tracks?.hits?.map((song, i) => (
           <SongCard

@@ -15,7 +15,7 @@ const TopCharts = () => {
   if (error) return <Error />;
 
   return (
-    <div className="flex flex-col  sm:ml-[200px] w-screen overflow-auto">
+    <div className="flex flex-col pb-20 sm:ml-[200px] w-screen overflow-auto">
       <h2 className="font-bold text-3xl text-white text-center mt-10 mb-4">
         WorldWide Hits
       </h2>
