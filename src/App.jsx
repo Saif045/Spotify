@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import { Route, Routes } from "react-router-dom";
 
-import {  Sidebar, MusicPlayer, ScrollToTop } from "./components";
+import { Sidebar, MusicPlayer, ScrollToTop } from "./components";
 import {
   ArtistDetails,
   Discover,

@@ -2,8 +2,7 @@ import React from "react";
 import { right, left } from "../assets/index";
 import { useSelector } from "react-redux";
 import { useGetSongsByGenreQuery } from "../redux/services/shazamCore";
-import { Error, Loader } from "../components";
-import SongCard from "./SongCard";
+import { Error, Loader, SongCard } from "../components";
 
 const Row = ({ i, genre, name }) => {
   const { activeSong, isPlaying } = useSelector((state) => state.player);
@@ -19,7 +18,6 @@ const Row = ({ i, genre, name }) => {
     slider.scrollLeft = slider.scrollLeft + 500;
   };
   if (isFetching) return <Loader title="Loading songs..." />;
-  
 
   return (
     <div className="relative  flex flex-col  ">

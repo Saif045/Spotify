@@ -43,20 +43,3 @@ const DetailsHeader = ({ data }) => {
 };
 
 export default DetailsHeader;
-
-{
-  /** <div
-            className={`absolute inset-0 justify-center items-center bg-black bg-opacity-50 group-hover:flex ${
-              activeSong?.title === songData.title
-                ? "flex bg-black bg-opacity-70"
-                : "hidden"
-            }`}>
-            <PlayPause
-              isPlaying={isPlaying}
-              activeSong={activeSong}
-              song={songData}
-              handlePause={handlePauseClick}
-              handlePlay={handlePlayClick}
-            />
-          </div> */
-}

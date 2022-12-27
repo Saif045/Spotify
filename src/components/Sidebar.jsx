@@ -1,18 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
-import {
-  HiOutlineHashtag,
-  HiOutlineHome,
-  HiOutlinePhotograph,
-  HiSearch,
-} from "react-icons/hi";
+import { HiOutlineHashtag, HiOutlineHome, HiSearch } from "react-icons/hi";
 import { logo } from "../assets";
 
 const links = [
   { name: "Discover", to: "/", icon: HiOutlineHome },
   { name: "WorldWide", to: "/WorldWide", icon: HiOutlineHashtag },
   { name: "Search", to: "/search", icon: HiSearch },
-  { name: "Around You", to: "/around-you", icon: HiOutlinePhotograph },
 ];
 
 const NavLinks = () => (

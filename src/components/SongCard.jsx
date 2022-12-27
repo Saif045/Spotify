@@ -1,9 +1,8 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
-
-import PlayPause from './PlayPause';
-import { playPause, setActiveSong } from '../redux/features/playerSlice';
+import React from "react";
+import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import PlayPause from "./PlayPause";
+import { playPause, setActiveSong } from "../redux/features/playerSlice";
 
 const SongCard = ({ song, isPlaying, activeSong, data, i }) => {
   const dispatch = useDispatch();
@@ -17,13 +16,15 @@ const SongCard = ({ song, isPlaying, activeSong, data, i }) => {
     dispatch(playPause(true));
   };
 
-
- 
-
   return (
     <div className="   inline-flex flex-col m-2  w-[200px] h-auto p-4 bg-white/5 bg-opacity-80 backdrop-blur-sm animate-slideleft rounded-lg cursor-pointer">
       <div className="relative w-full  group">
-        <div className={`absolute inset-0 justify-center items-center bg-black bg-opacity-50 group-hover:flex ${activeSong?.title === song.title ? 'flex bg-black bg-opacity-70' : 'hidden'}`}>
+        <div
+          className={`absolute inset-0 justify-center items-center bg-black bg-opacity-50 group-hover:flex ${
+            activeSong?.title === song.title
+              ? "flex bg-black bg-opacity-70"
+              : "hidden"
+          }`}>
           <PlayPause
             isPlaying={isPlaying}
             activeSong={activeSong}
@@ -32,17 +33,21 @@ const SongCard = ({ song, isPlaying, activeSong, data, i }) => {
             handlePlay={handlePlayClick}
           />
         </div>
-        <img alt="song_img" src={song?.images?.coverart} className="w-full h-full rounded-lg" />
+        <img
+          alt="song_img"
+          src={song?.images?.coverart}
+          className="w-full h-full rounded-lg"
+        />
       </div>
 
       <div className="mt-4 flex flex-col">
         <p className="font-semibold text-lg text-white truncate">
-          <Link state={{data , i}} to={`/songs/${song?.key}`}>
+          <Link state={{ data, i }} to={`/songs/${song?.key}`}>
             {song?.title}
           </Link>
         </p>
         <p className="text-sm truncate text-gray-300 mt-1">
-        <Link to={`/artists/${song?.subtitle?.split(" ").slice(0, 1)}`}>
+          <Link to={`/artists/${song?.subtitle?.split(" ").slice(0, 1)}`}>
             {song?.subtitle}
           </Link>
         </p>
