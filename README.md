@@ -5,7 +5,7 @@ Welcome to the repository for our Spotify clone built with React, Tailwind CSS, 
 Installation
 
 
-Clone this repository: git clone https://github.com/[USERNAME]/spotify-clone.git 
+Clone this repository: git clone https://github.com/Saif045/Spotify.git 
 
 Install dependencies: npm install 
 
