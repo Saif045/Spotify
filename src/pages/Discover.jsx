@@ -13,7 +13,9 @@ const Discover = () => {
   return (
     <>
       <div className="  pb-20 pt-6 sm:ml-[200px] w-screen h-screen overflow-auto flex flex-col ">
-       
+        <h1 className="font-bold text-3xl text-white mt-4 ml-2 mb-4">
+          Discover
+        </h1>
 
         {rowData.map((genre, i) => (
           <Row key={i} i={i} genre={genre.term} name={genre.name} />
