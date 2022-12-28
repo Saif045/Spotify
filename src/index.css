@@ -3,10 +3,11 @@
 @tailwind utilities;
 
 body {
-  background-color: rgb(0, 17, 10)
+  background-color: rgb(0, 17, 10);
+  overflow-x: hidden;
 }
 
-.hide-overflow{
+.hide-overflow {
   overflow-x: hidden;
 }
 
