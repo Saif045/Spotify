@@ -20,3 +20,4 @@ Vite for a fast and lightweight development server
 Redux Toolkit for managing state
 
 live:https://spotify45.netlify.app/
+![Spotify](https://user-images.githubusercontent.com/106855656/209869005-b615f805-6b4f-4aa1-9b44-f480787f1a44.PNG)
