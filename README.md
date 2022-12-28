@@ -1,5 +1,5 @@
 # Spotify
-Welcome to the repository for our Spotify clone built with React, Tailwind CSS, Vite,  Redux Toolkit and Shazam api.
+Welcome to the repository for our Spotify clone built with React, Tailwind CSS, Vite,  Redux Toolkit and Shazam API.
 
 
 Installation
